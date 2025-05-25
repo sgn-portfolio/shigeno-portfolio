@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shigeno's portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      position: relative;
+      padding: 4rem 2rem;
+      text-align: center;
+      background-image: url("images/header-bg.png");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      z-index: 0;
+      overflow: hidden;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+    header h1,
+    header p {
+      position: relative;
+      z-index: 2;
+    }
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+      font-family: 'Great Vibes', cursive;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #eee;
+    }
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .skills ul,
+    .support ul {
+      list-style: none;
+      padding: 0;
+    }
+    .skills li,
+    .support li {
+      display: inline-block;
+      background: #f0f0f0;
+      padding: 0.5rem 1rem;
+      margin: 0.3rem;
+      border-radius: 20px;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .video-item {
+      display: flex;
+      flex-direction: column;
+    }
+    video {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .video-caption {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 0.4rem;
+      text-align: center;
+      user-select: none;
+    }
+    .contact a {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #333;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .contact a:hover {
+      background: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 1rem auto;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shigeno's portfolio</h1>
+    <p>ショート動画で、あなたの魅力を伝える</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <img src="images/profile.JPG" alt="プロフィール写真" class="profile-photo" />
+    <p>
+      TikTokやInstagramのリール動画を中心に編集を行っている、動画編集者です。<br />
+      Premiere ProやCapCutなどを使用し、縦型ショート動画に特化したコンテンツを制作しています。<br />
+      事務職歴9年の経験を活かした丁寧かつスピーディーな対応を心がけ、クライアントに寄り添い、その魅力が伝わる動画制作を目指しています。
+    </p>
+    <h3>使用ソフト・スキル</h3>
+    <ul class="skills">
+      <li>Premiere Pro</li>
+      <li>After Effects</li>
+      <li>CapCut</li>
+      <li>Canva</li>
+      <li>Photoshop</li>
+      <li>Illustrator</li>
+    </ul>
+    <h3>対応可能な内容</h3>
+    <ul class="support">
+      <li>ショート動画編集（TikTok / Reels）</li>
+      <li>テロップ・エフェクト・音楽の挿入</li>
+      <li>SNS向け動画のテンポ感ある編集</li>
+    </ul>
+  </section>
+
+  <section class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="video-grid">
+      <div class="video-item">
+        <video controls src="videos/sample1.mp4"></video>
+        <p class="video-caption">YouTubeのオープニング用に制作した動画</p>
+      </div>
+      <div class="video-item">
+        <video controls src="videos/sample2.mp4"></video>
+        <p class="video-caption">脱毛クリームのプロモーションサンプル動画</p>
+      </div>
+      <div class="video-item">
+        <video controls src="videos/sample3.mp4"></video>
+        <p class="video-caption">美容液のプロモーションサンプル動画</p>
+      </div>
+      <div class="video-item">
+        <video controls src="videos/sample4.mp4"></video>
+        <p class="video-caption">AGAクリニックのショート編集</p>
+      </div>
+      <div class="video-item">
+        <video controls src="videos/sample5.mp4"></video>
+        <p class="video-caption">不動産物件紹介のショート動画</p>
+      </div>
+      <div class="video-item">
+        <video controls src="videos/sample6.mp4"></video>
+        <p class="video-caption">副業紹介のショート動画</p>
+      </div>
+      <div class="video-item">
+        <video controls src="videos/sample7.mov"></video>
+        <p class="video-caption">シャンプーのプロモーション動画</p>
+      </div>
+      <div class="video-item">
+        <video controls src="videos/sample8.mov"></video>
+        <p class="video-caption">シャンプーのプロモーション動画2</p>
+      </div>
+      <div class="video-item">
+        <video controls src="videos/sample9.mp4"></video>
+        <p class="video-caption">転職サイトのプロモーション動画</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>お仕事のご依頼・ご相談はこちらから</p>
+    <a href="mailto:oniyuri.so@gmail.com">メールで問い合わせる</a>
+  </section>
+
+  <footer>© 2025 Shigeno. All rights reserved.</footer>
+</body>
+</html>
